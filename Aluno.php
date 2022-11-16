@@ -40,7 +40,6 @@
 
                             <input type="submit" value="EDITAR">
                         </form>
-                        <a href="./ver_aluno.php">Voltar</a>
                 <?php } ?>  <!--FECHA CHAVE DO IF-->
             <?php } ?> <!--FECHA CHAVE DO WHILE-->
         <?php } ?> <!--FECHA CHAVE DO ELSE-->
