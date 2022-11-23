@@ -8,7 +8,9 @@
     $carga = $_POST['carga_h'];
     $desc = $_POST['descricao'];
 
-    $consulta = "UPDATE curso SET nome_curso = '$nome',
+    $consulta = "UPDATE curso
+    
+     SET nome_curso = '$nome',
                                     area = '$area',
                                     carga_h = $carga, 
                                     descricao = '$desc'
