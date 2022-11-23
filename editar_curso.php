@@ -2,17 +2,17 @@
 
     include 'conexao.php';
 
-    $id = $_POST['ID'];
-    $nome = $_POST['NOME'];
-    $area = $_POST['AREA'];
-    $carga = $_POST['CARGA_HORARIA'];
-    $desc = $_POST['DESCRICAO'];
+    $id = $_POST['cod_curso'];
+    $nome = $_POST['nome_curso'];
+    $area = $_POST['area'];
+    $carga = $_POST['carga_h'];
+    $desc = $_POST['descricao'];
 
-    $consulta = "UPDATE cursos SET NOME = '$nome',
-                                    AREA = '$area',
-                                    CARGA_HORARIA = $carga, 
-                                    DESCRICAO = '$desc'
-                                    WHERE ID = $id";
+    $consulta = "UPDATE curso SET nome_curso = '$nome',
+                                    area = '$area',
+                                    carga_h = $carga, 
+                                    descricao = '$desc'
+                                    WHERE cod_curso = $id";
 
     mysqli_query($conexao, $consulta);
 

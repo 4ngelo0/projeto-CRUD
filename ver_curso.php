@@ -16,20 +16,20 @@
                 <?php
                     include 'conexao.php';
 
-                    $mostrar = 'SELECT * FROM cursos';
+                    $mostrar = 'SELECT * FROM curso';
                     $consulta_cursos = mysqli_query($conexao, $mostrar);
 
                     while($linha = mysqli_fetch_array($consulta_cursos)){
-                        echo '<tr><td>' . $linha['NOME'] . '</td>';
-                        echo '<td>' . $linha['AREA'] . '</td>';
+                        echo '<tr><td>' . $linha['nome_curso'] . '</td>';
+                        echo '<td>' . $linha['area'] . '</td>';
                 ?>
 
                     <td>
-                    <a href="curso.php?editar=<?php echo $linha['ID']; ?>">
+                    <a href="curso.php?editar=<?php echo $linha['cod_curso']; ?>">
                     <input type="submit" value="EDITAR">
                     </a></td>   
 
-                <td><a href="deleta_curso.php?ID=<?php echo $linha['ID']; ?>">
+                <td><a href="deleta_curso.php?cod_curso=<?php echo $linha['cod_curso']; ?>">
                 <input type="submit" value="DELETAR"/>
                 </a></td></tr>  
 

@@ -19,16 +19,16 @@
                     $consulta_alunos = mysqli_query($conexao, $consulta);
 
                     while($linha = mysqli_fetch_array($consulta_alunos)){
-                        echo '<tr><td>' . $linha['nome'] . '</td>';
-                        echo '<td>' . $linha['idade'] . '</td>';
+                        echo '<tr><td>' . $linha['NOME'] . '</td>';
+                        echo '<td>' . $linha['IDADE'] . '</td>';
                 ?>
 
                 <td>
-                    <a href="Aluno.php?editar=<?php echo $linha['id']; ?>">
+                    <a href="Aluno.php?editar=<?php echo $linha['ID']; ?>">
                     <input type="submit" value="EDITAR">
                     </a></td>
 
-                <td><a href="deleta_aluno.php?ID=<?php echo $linha['id']; ?>">
+                <td><a href="deleta_aluno.php?ID=<?php echo $linha['ID']; ?>">
                 <input type="submit" value="DELETAR"/>
                 </a></td></tr>  
 

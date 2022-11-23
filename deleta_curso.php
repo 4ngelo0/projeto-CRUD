@@ -2,8 +2,8 @@
 
     include 'conexao.php';
 
-    $id = $_GET['ID'];
-    $mostrar = "DELETE FROM cursos WHERE ID = $id";
+    $id = $_GET['cod_curso'];
+    $mostrar = "DELETE FROM curso WHERE cod_curso = $id";
 
     mysqli_query($conexao, $mostrar);
 

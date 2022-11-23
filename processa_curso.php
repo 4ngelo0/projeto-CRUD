@@ -2,12 +2,12 @@
 
 include 'conexao.php';
 
-    $nome = $_POST['nome'];
+    $nome = $_POST['nome_curso'];
     $area = $_POST['area'];
-    $carga = $_POST['carga'];
-    $desc = $_POST['desc'];
+    $carga = $_POST['carga_h'];
+    $desc = $_POST['descricao'];
 
-    $query = "INSERT INTO cursos(NOME, AREA, CARGA_HORARIA, DESCRICAO)
+    $query = "INSERT INTO curso(nome_curso, area, carga_h, descricao)
                     VALUES('$nome', '$area', $carga, '$desc')";
 
     mysqli_query($conexao, $query);
