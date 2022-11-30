@@ -1,7 +1,7 @@
 <?php
 
 include 'conexao.php';
-$I     D = $_POST['escolha_aluno'];
+$ID = $_POST['escolha_aluno'];
 $cod_curso = $_POST['escolha_curso'];
 
 $query =  "INSERT INTO matricula (cod_aluno, cod_curso)
