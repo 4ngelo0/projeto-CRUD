@@ -36,6 +36,7 @@
             }
         ?>
     </select>
+    <input type="submit" value="CADASTRAR">
 </form>
 
 </body>
